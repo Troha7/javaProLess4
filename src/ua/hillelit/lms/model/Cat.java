@@ -1,15 +1,16 @@
 package ua.hillelit.lms.model;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
     private static int count;
     private final String className = this.getClass().getSimpleName();
+
     public Cat(String name) {
         super(name);
         count++;
     }
 
-    public static void printCount(){
+    public static void printCount() {
         System.out.println("Number of cats: " + count);
     }
 
@@ -17,10 +18,11 @@ public class Cat extends Animal{
     public void run(int runDistance) {
         super.run(runDistance);
         int maxRunDistance = 200;
-        if(runDistance >= 0 && runDistance <= maxRunDistance)
+        if (runDistance >= 0 && runDistance <= maxRunDistance) {
             System.out.println(this.className + " " + super.getName() + " ran " + runDistance + " m.");
-        else
+        } else {
             System.out.println(this.className + " [Run distance set incorrectly!]");
+        }
     }
 
     @Override

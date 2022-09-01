@@ -10,16 +10,18 @@ public class Animal {
         count++;
     }
 
-    public static void printCount(){
+    public static void printCount() {
         System.out.println("Number of animals: " + count);
     }
+
     public String getName() {
         return name;
     }
 
-    public void run(int runDistance){
+    public void run(int runDistance) {
     }
-    public void swim(int swimDistance){
+
+    public void swim(int swimDistance) {
     }
 
 }
